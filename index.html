@@ -248,6 +248,16 @@ I have a thing for stars and galaxies.
                         </div>
                         <div class="tab-pane fade" id="FC2">
                             <div class="row">
+                            	<div class="col-md-4 col-sm-6">                                    
+                                    <div class="row" id="image">
+                                        <figure class="col-xs-10 col-xs-offset-1">
+                                            <center><img src="images/paintings/pic18.jpg" class="img-responsive" /></center>
+                                        </figure>
+                                        <div id="magnify" onclick="maximize(2,18)">
+                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="col-md-4 col-sm-6">                                    
                                     <div class="row" id="image">
                                         <figure class="col-xs-10 col-xs-offset-1">
@@ -329,31 +339,32 @@ I have a thing for stars and galaxies.
                                         </div>
                                     </div>
                                 </div> 
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="row" id="image">
-                                        <figure class="col-xs-10 col-xs-offset-1">
-                                            <center><img src="images/paintings/pic5.jpg" class="img-responsive" /></center>
-                                        </figure>
-                                        <div id="magnify" onclick="maximize(2,5)">
-                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                                 
 
-                                
+                                <center><button class = "btn btn-primary" onclick = "showmore();" id = "showmore">Load More !</button></center>
 
                                 <div id = "extra" style = "transition:all ease-in-out 2s;">
-                                    <div class="col-md-4 col-sm-6">
-                                        <div class="row" id="image">
-                                            <figure class="col-xs-10 col-xs-offset-1">
-                                                <center><img src="images/paintings/pic6.jpg" class="img-responsive" /></center>
-                                            </figure>
-                                            <div id="magnify" onclick="maximize(2,6)">
-                                                <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
-                                            </div>
-                                        </div>
-                                    </div>
+                                	<div class="col-md-4 col-sm-6">
+	                                    <div class="row" id="image">
+	                                        <figure class="col-xs-10 col-xs-offset-1">
+	                                            <center><img src="images/paintings/pic5.jpg" class="img-responsive" /></center>
+	                                        </figure>
+	                                        <div id="magnify" onclick="maximize(2,5)">
+	                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <div class="col-md-4 col-sm-6">
+	                                    <div class="row" id="image">
+	                                        <figure class="col-xs-10 col-xs-offset-1">
+	                                            <center><img src="images/paintings/pic6.jpg" class="img-responsive" /></center>
+	                                        </figure>
+	                                        <div id="magnify" onclick="maximize(2,6)">
+	                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+	                                        </div>
+	                                    </div>
+	                                </div>
                                     <div class="col-md-4 col-sm-6">
                                         <div class="row" id="image">
                                             <figure class="col-xs-10 col-xs-offset-1">
@@ -425,12 +436,7 @@ I have a thing for stars and galaxies.
                                             </div>
                                         </div>
                                     </div>
-                                </div> 
-                                 <div class = "row">
-                                    <div class = "col-md-12">
-                                        <center><button class = "btn btn-primary" onclick = "showmore();" id = "showmore">Load More !</button></center>
-                                    </div>
-                                </div>
+                                </div>                                
                             </div>
                         </div>
                         
@@ -438,7 +444,6 @@ I have a thing for stars and galaxies.
                 </div>
             </div>
         </div>
-       
     </div>
     
     
@@ -788,6 +793,10 @@ So, if 'art' is what you love, take a brush, start painting, without bothering m
                 if(i==17)
                 {
                     desc.innerHTML = "How can two entities possessing intelligence and judgement be tied together for a lifetime!<br /> - Malgudi Days";
+                }
+                if(i==18)
+                {
+                    desc.innerHTML = "\"There are dead stars which still shine because their light is trapped in time. Where do I stand in this light, which does not strictly exist?\"";
                 }
             }
 
