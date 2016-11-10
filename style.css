@@ -81,7 +81,7 @@ body {
     font-family:lato;
 }
 
-#about .jumbotron ,#contact .jumbotron{
+#about .jumbotron ,#contact .jumbotron, #other .jumbotron{
     background-color:transparent;
     margin:0;
 }
@@ -266,6 +266,22 @@ body {
     margin:1em 0;
 }
 
+#other{
+    font-family: lato;
+    padding:3em 1em;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    background-image: url('images/other.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#other iframe{
+    margin: 2em 0;
+}
+
 footer{
     color:white;
     text-align:center;
@@ -370,6 +386,9 @@ footer{
 
     #contact  p{
         font-size:1em;
+    }
+    #other{
+        background-image: url('images/other1.jpg');
     }
 }
 
