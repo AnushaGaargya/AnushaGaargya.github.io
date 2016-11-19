@@ -70,33 +70,34 @@ body {
 #about{
     overflow:hidden;
     height:100vh;
-    background-image:url('images/pranav1.jpg');
+    background-image:url('images/promo.jpg');
     background-attachment:fixed;
     background-position:center;
     background-repeat:no-repeat;
     background-color:white;
-    background-position-y:-2em;
     background-size:cover;
-    background-color:#f7f7f7;
+    /*background-color:#f7f7f7;*/
     font-family:lato;
+    color: white;
 }
 
-#about .jumbotron ,#contact .jumbotron, #other .jumbotron{
+#about .container-fluid{
+    height: 100vh;
+    margin: 0 0;
+}
+
+#about .container-fluid .jumbotron ,#contact .jumbotron, #other .jumbotron{
     background-color:transparent;
     margin:0;
 }
 
-#about .container p{
+#about .container-fluid p{
     text-align:justify;
     margin-bottom:2em;
     text-indent:100px;
+    font-family: lato;
 }
 
-#about img{
-    width:150px;
-    height: 50px;
-    float: right;
-}
 
 #contact{
     background-color:#1B1B1B;
@@ -138,10 +139,12 @@ body {
     background-attachment: fixed;
 }
 
+
+
 #gallery img{
     margin:2em 0;
     height:300px;
-    width:300px;
+    width:300px;    
 }
 
 #gallery .jumbotron{
@@ -194,7 +197,9 @@ body {
     height:80vh;
     width:80%;
     position:relative;
-    box-shadow:0 0 20px black;
+    box-shadow:0 0 20px black;    
+	border-top-left-radius: 3px;
+	border-bottom-right-radius: 3px;
 }
 
 #window #explanation{
@@ -409,7 +414,7 @@ footer{
        padding:0;
     }
    #about{
-    background-position-x:0em;
+    background-position-x:-10em;
 }
     #window #zoomer img{
         margin-left:0;
@@ -462,7 +467,7 @@ footer{
 @media screen and (max-width: 240px)
 {
 
-    #about .container p{
+    #about .container-fluid p{
         font-size: 0.8em;
         text-indent: 50px
     }
