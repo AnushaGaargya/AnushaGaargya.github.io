@@ -33,6 +33,7 @@
         });
 
     </script>
+    
 </head>
 <body>
 
@@ -87,16 +88,17 @@
 
 
     <div id="about">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="jumbotron text-center">
-                    <h2 style="font-family:'Showcard Gothic';letter-spacing:2px;">About me</h2>
-                </div>
-            </div>
-        </div>
-        <div class="container">
+        
+        <div class="container-fluid" style="background: rgba(0,0,0,0.70	);">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <div class="jumbotron text-center">
+	                    <h2 style="font-family:'Pacifico';letter-spacing:2px;font-size:3em;">About me</h2>
+	                </div>
+	            </div>
+	        </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-md-offset-3">
                     <p>
                         I, Anusha Gaargya, am an amateur artist, living in Karnataka, India. 
 I have a degree in Electronics and Communication Engineering. But, ART is my passion. 
@@ -104,7 +106,7 @@ I have a degree in Electronics and Communication Engineering. But, ART is my pas
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-md-offset-3">
                     <p>
                         I draw portraits and I try to paint out my thoughts. Because, I think I say better through pictures than words. 
 I'm also interested in Indian classical music and I practice the same. I love playing the keyboard in my free time. 
@@ -113,7 +115,7 @@ I'm also interested in Indian classical music and I practice the same. I love pl
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-md-offset-3">
                     <p>
                         When I'm not drawing or listening to music, you'll find me reading Carl Sagan's quotes or looking up at the sky watching the birds fly. 
 I have a thing for stars and galaxies.                        
@@ -122,13 +124,10 @@ I have a thing for stars and galaxies.
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 text-right">
-                    <img src="images/sign.jpg" class = "img-responsive" />
-                </div>
-            </div>
         </div>
     </div>
+
+    	
 
 
     <div id="gallery">
@@ -562,7 +561,7 @@ I have a thing for stars and galaxies.
         </div>
         <div class="row">
             <div class="col-md-7" style="padding:1em 1em;box-sizing:border-box;" id="zoomer">
-                <center><img id="zoom"/></center>
+                <center><img id="zoom" class="img-circle" style="border-top-left-radius: 3px;border-bottom-right-radius: 3px;" /></center>
             </div>
             <div class="col-md-5" id="explanation">
                 Lorem samARTh ipsum dolor sit amet, consectetur adipiscing elit.
@@ -634,7 +633,7 @@ I have a thing for stars and galaxies.
     </div>
 
 
-    <div id="other"style="background-image: url('images/other.jpg');background-size:cover;background-attachment:fixed;background-position:center;">
+    <div id="other">
     	<div class="container">
     		<div class="jumbotron text-center">
     			<h2>Other Interests</h2>
