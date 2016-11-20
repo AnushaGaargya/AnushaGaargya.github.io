@@ -322,6 +322,7 @@ footer{
    #about{
         background-position-x:0;
         background-position-y:0; 
+	background-attachment:scroll;
     }
 
     #banner #personal-details img{
