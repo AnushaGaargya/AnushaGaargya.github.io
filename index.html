@@ -35,7 +35,12 @@
 
         function welcome(){
 
-        	responsiveVoice.speak('Welcome to Anusha Gaargya\'s art gallery. Portraits and paintings will promise pleasure to your eyes,mind, heart and soul! Carry on with the tour and keep visiting! Thank you!');
+			try{
+				responsiveVoice.speak('Welcome to Anusha Gaargya\'s art gallery. Portraits and paintings will promise pleasure to your eyes,mind, heart and soul! Carry on with the tour and keep visiting! Thank you!');
+			}catch(e){
+
+			}
+
 
         }
 
@@ -726,55 +731,91 @@ So, if 'art' is what you love, take a brush, start painting, without bothering m
                 {
                     desc.innerHTML = " \"People see, they dont observe. The distinction is clear ! \" <br /><br /> <b>Benedict Cumberbatch</b> in Sherlock Holmes.";
 
-                    responsiveVoice.speak('People see, they don\'t observe. The distinction is clear. Says Benedict Cumberbatch in Sherlock Holmes');
+					try{
+						responsiveVoice.speak('People see, they don\'t observe. The distinction is clear. Says Benedict Cumberbatch in Sherlock Holmes');
+					}  catch(e){
+
+					}
                 }
                 if(i == 2)
                 {
                     desc.innerHTML = "<b>Walter White</b> from Breaking bad.";
 
-                    responsiveVoice.speak('Walter White from Breaking Bad!');
+                    try{
+                    	responsiveVoice.speak('Walter White from Breaking Bad!');
+                    }catch(e){
+
+                    }
                 }
                 if(i == 3)
                 {
                     desc.innerHTML = "\"When my dragons are grown, we will take back what was stolen from me and destroy those who wronged me! We will lay waste to armies and burn cities to the ground!\"<br />-<b>Daenerys Targaryen</b> in Game of Thrones";
 
-                    responsiveVoice.speak('When my dragons are grown, we will take back what was stolen from me and destroy those who wronged me! We will lay waste to armies and burn cities to the ground! - Daenerys Targaryen in Game of Thrones');
+					try{
+						responsiveVoice.speak('When my dragons are grown, we will take back what was stolen from me and destroy those who wronged me! We will lay waste to armies and burn cities to the ground! - Daenerys Targaryen in Game of Thrones');
+					}catch(e){
+
+					}
                 }
                 if(i == 4)
                 {
                     desc.innerHTML = "\"I think any form of self-expression is half confidence, half sheer hard work and, maybe, a bit of talent thrown in.\" <br /> - <b>Kate Winslet</b>";
                 
-                	responsiveVoice.speak('I think any form of self-expression is half confidence, half sheer hard work and, maybe, a bit of talent thrown in - <b>Kate Winslet');
+                	try{
+                		responsiveVoice.speak('I think any form of self-expression is half confidence, half sheer hard work and, maybe, a bit of talent thrown in - <b>Kate Winslet');
+                	}catch(e){
+
+                	}
                 }
                 if(i == 5)
                 {
                     desc.innerHTML = "\"When there is growth, changes are automatic. If I fear change, how can there be growth ?\"";
 
-                    responsiveVoice.speak('When there is growth, changes are automatic. If I fear change, how can there be growth?');
+                    try{
+                    	responsiveVoice.speak('When there is growth, changes are automatic. If I fear change, how can there be growth?');
+                    }catch(e){
+
+                    }
                 }
                 if(i == 6)
                 {
                     desc.innerHTML = "It's the sweat that measures your hardwork, not the success!";
 
-                    responsiveVoice.speak('It\'s the sweat that measures your hardwork, not the success');
+                    try{
+                    	responsiveVoice.speak('It\'s the sweat that measures your hardwork, not the success');
+                    }catch(e){
+
+                    }
                 }
                 if(i == 7)
                 {
                     desc.innerHTML = "Mohit Kushalappa. A classmate of mine!";
 
-                    responsiveVoice.speak('It is Mohit!');
+                    try{
+                    	responsiveVoice.speak('It is Mohit!');
+                    }catch(e){
+
+                    }
                 }
                 if(i == 8)
                 {
                     desc.innerHTML = "Dream - A satisfied state of an unsatisfied mind!";
 
-                    responsiveVoice.speak('Dream - A satisfied state of an unsatisfied mind.');
+                    try{
+                    	responsiveVoice.speak('Dream - A satisfied state of an unsatisfied mind.');
+                    }catch(e){
+
+                    }
                 }
                 if(i == 9)
                 {
                     desc.innerHTML = "Pencil sketch of the portrait photo taken by Sumukh Bharadwaj.Check out his gallery <a href = \"https://www.instagram.com/oftrailsandtales/\" target = \"_blank\">@oftrailsandtales</a> for more of his amazing photography and heartwarming travel stories.";
 
-                    responsiveVoice.speak('Pencil sketch of the portrait photo taken by Sumukh Bharadwaj.Check out his gallery of trails and tales for more of his amazing photography and heartwarming travel stories.');
+					try{
+						responsiveVoice.speak('Pencil sketch of the portrait photo taken by Sumukh Bharadwaj.Check out his gallery of trails and tales for more of his amazing photography and heartwarming travel stories.');
+					}catch(e){
+
+					}
                 }
 
             }
