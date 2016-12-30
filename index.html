@@ -213,6 +213,16 @@ I have a thing for stars and galaxies.
                         <div class="active tab-pane fade in" id="FC1">
                             <div class="row text-center" style="margin:1em;font-family:lato;"><p>Tap to zoom!</p></div>  
                             <div class="row">
+	                            <div class="col-md-4 col-sm-6">
+                                    <div class="row" id="image">
+                                        <figure class="col-xs-10 col-xs-offset-1">
+                                            <center><img src="images/portraits/pic10.jpg" class="img-responsive" /></center>
+                                        </figure>
+                                        <div id="magnify" onclick="maximize(1,10)">
+                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="col-md-4 col-sm-6">
                                     <div class="row" id="image">
                                         <figure class="col-xs-10 col-xs-offset-1">
@@ -314,6 +324,16 @@ I have a thing for stars and galaxies.
                             	<div class="col-md-4 col-sm-6">                                    
                                     <div class="row" id="image">
                                         <figure class="col-xs-10 col-xs-offset-1">
+                                            <center><img src="images/paintings/pic21.jpg" class="img-responsive" /></center>
+                                        </figure>
+                                        <div id="magnify" onclick="maximize(2,21)">
+                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+                                        </div>
+                                    </div>
+	                            </div>
+                            	<div class="col-md-4 col-sm-6">                                    
+                                    <div class="row" id="image">
+                                        <figure class="col-xs-10 col-xs-offset-1">
                                             <center><img src="images/paintings/pic20.jpg" class="img-responsive" /></center>
                                         </figure>
                                         <div id="magnify" onclick="maximize(2,20)">
@@ -391,20 +411,21 @@ I have a thing for stars and galaxies.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="row" id="image">
-                                        <figure class="col-xs-10 col-xs-offset-1">
-                                            <center><img src="images/paintings/pic14.jpg" class="img-responsive" /></center>
-                                        </figure>
-                                        <div id="magnify" onclick="maximize(2,14)">
-                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
-                                        </div>
-                                    </div>
-                                </div>                                                         
+                                                                                        
 
                                 <center><button class = "btn btn-primary" onclick = "showmore();" id = "showmore">Load More !</button></center>
 
                                 <div id = "extra" style = "transition:all ease-in-out 2s;">
+                                	<div class="col-md-4 col-sm-6">
+	                                    <div class="row" id="image">
+	                                        <figure class="col-xs-10 col-xs-offset-1">
+	                                            <center><img src="images/paintings/pic14.jpg" class="img-responsive" /></center>
+	                                        </figure>
+	                                        <div id="magnify" onclick="maximize(2,14)">
+	                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+	                                        </div>
+	                                    </div>
+	                                </div> 
                                 	<div class="col-md-4 col-sm-6">
 	                                    <div class="row" id="image">
 	                                        <figure class="col-xs-10 col-xs-offset-1">
@@ -874,6 +895,16 @@ So, if 'art' is what you love, take a brush, start painting, without bothering m
 
 					}
                 }
+                if(i == 10)
+                {
+                    desc.innerHTML = "Love is an irresistable desire to be irresistably desired!";
+
+                    try{
+                    	responsiveVoice.speak('Love is an irresistable desire to be irresistably desired!');
+                    }catch(e){
+
+                    }
+                }
 
             }
             else
@@ -959,6 +990,10 @@ So, if 'art' is what you love, take a brush, start painting, without bothering m
                 if(i==20)
                 {
                     desc.innerHTML = "For small creatures such as we, the vastness is bearable only through love.";
+                }
+                if(i==21)
+                {
+                    desc.innerHTML = "Doodling is meditative!";
                 }
             }
 
