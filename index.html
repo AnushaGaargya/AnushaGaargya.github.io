@@ -213,6 +213,16 @@ I have a thing for stars and galaxies.
                         <div class="active tab-pane fade in" id="FC1">
                             <div class="row text-center" style="margin:1em;font-family:lato;"><p>Tap to zoom!</p></div>  
                             <div class="row">
+                            	<div class="col-md-4 col-sm-6">
+                                    <div class="row" id="image">
+                                        <figure class="col-xs-10 col-xs-offset-1">
+                                            <center><img src="images/portraits/pic11.jpg" class="img-responsive" /></center>
+                                        </figure>
+                                        <div id="magnify" onclick="maximize(1,11)">
+                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+                                        </div>
+                                    </div>
+                                </div>
 	                            <div class="col-md-4 col-sm-6">
                                     <div class="row" id="image">
                                         <figure class="col-xs-10 col-xs-offset-1">
@@ -901,6 +911,16 @@ So, if 'art' is what you love, take a brush, start painting, without bothering m
 
                     try{
                     	responsiveVoice.speak('Love is an irresistable desire to be irresistably desired!');
+                    }catch(e){
+
+                    }
+                }
+                if(i == 11)
+                {
+                    desc.innerHTML = "When will you start living like a mendicant - having just a carry bag as possession,going from town to town, singing songs, forgetting about burdens, letting the joys and griefs not affect your mind? That day, you will be truly happy. ";
+
+                    try{
+                    	responsiveVoice.speak('When will you start living like a mendicant - having just a carry bag as possession, going from town to town, singing songs, forgetting about burdens, letting the joys and griefs not affect your mind? That day, you will be truly happy. ');
                     }catch(e){
 
                     }
