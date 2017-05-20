@@ -216,6 +216,16 @@ I have a thing for stars and galaxies.
 				<div class="col-md-4 col-sm-6">
                                     <div class="row" id="image">
                                         <figure class="col-xs-10 col-xs-offset-1">
+                                            <center><img src="images/portraits/pic14.jpg" class="img-responsive" /></center>
+                                        </figure>
+                                        <div id="magnify" onclick="maximize(1,14)">
+                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+                                        </div>
+                                    </div>
+                                </div>
+				<div class="col-md-4 col-sm-6">
+                                    <div class="row" id="image">
+                                        <figure class="col-xs-10 col-xs-offset-1">
                                             <center><img src="images/portraits/pic13.jpg" class="img-responsive" /></center>
                                         </figure>
                                         <div id="magnify" onclick="maximize(1,13)">
@@ -1025,6 +1035,16 @@ So, if 'art' is what you love, take a brush, start painting, without bothering m
 
                     try{
                     	responsiveVoice.speak('Be ugly. Be imperfect. Be everything they\'ve always told you not to be. Be unapologetically you.');
+                    }catch(e){
+
+                    }
+                }
+		if(i == 14)
+                {
+                    desc.innerHTML = "Osho";
+
+                    try{
+                    	responsiveVoice.speak('Osho');
                     }catch(e){
 
                     }
