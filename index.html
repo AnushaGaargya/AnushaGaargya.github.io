@@ -35,11 +35,11 @@
 
         function welcome(){
 
-			try{
-				responsiveVoice.speak('Welcome to Anusha Gaargya\'s art gallery.');
-			}catch(e){
+            try{
+                responsiveVoice.speak('Welcome to Anusha Gaargya\'s art gallery.');
+            }catch(e){
 
-			}
+            }
 
 
         }
@@ -152,14 +152,14 @@
 
     <div id="about">
         
-        <div class="container-fluid" style="background: rgba(0,0,0,0.70	);">
-	        <div class="row">
-	            <div class="col-xs-12">
-	                <div class="jumbotron text-center">
-	                    <h2 style="font-family:'Pacifico';letter-spacing:2px;font-size:3em;">About me</h2>
-	                </div>
-	            </div>
-	        </div>
+        <div class="container-fluid" style="background: rgba(0,0,0,0.70 );">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="jumbotron text-center">
+                        <h2 style="font-family:'Pacifico';letter-spacing:2px;font-size:3em;">About me</h2>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <p>
@@ -190,7 +190,7 @@ I have a thing for stars and galaxies.
         </div>
     </div>
 
-    	
+        
 
 
     <div id="gallery">
@@ -213,7 +213,17 @@ I have a thing for stars and galaxies.
                         <div class="active tab-pane fade in" id="FC1">
                             <div class="row text-center" style="margin:1em;font-family:lato;"><p>Tap to zoom!</p></div>  
                             <div class="row">
-				<div class="col-md-4 col-sm-6">
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="row" id="image">
+                                        <figure class="col-xs-10 col-xs-offset-1">
+                                            <center><img src="images/portraits/pic15.jpg" class="img-responsive" /></center>
+                                        </figure>
+                                        <div id="magnify" onclick="maximize(1,15)">
+                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6">
                                     <div class="row" id="image">
                                         <figure class="col-xs-10 col-xs-offset-1">
                                             <center><img src="images/portraits/pic14.jpg" class="img-responsive" /></center>
@@ -223,7 +233,7 @@ I have a thing for stars and galaxies.
                                         </div>
                                     </div>
                                 </div>
-				<div class="col-md-4 col-sm-6">
+                                <div class="col-md-4 col-sm-6">
                                     <div class="row" id="image">
                                         <figure class="col-xs-10 col-xs-offset-1">
                                             <center><img src="images/portraits/pic13.jpg" class="img-responsive" /></center>
@@ -233,7 +243,7 @@ I have a thing for stars and galaxies.
                                         </div>
                                     </div>
                                 </div>
-				<div class="col-md-4 col-sm-6">
+                                <div class="col-md-4 col-sm-6">
                                     <div class="row" id="image">
                                         <figure class="col-xs-10 col-xs-offset-1">
                                             <center><img src="images/portraits/pic12.jpg" class="img-responsive" /></center>
@@ -243,7 +253,7 @@ I have a thing for stars and galaxies.
                                         </div>
                                     </div>
                                 </div>
-                            	<div class="col-md-4 col-sm-6">
+                                <div class="col-md-4 col-sm-6">
                                     <div class="row" id="image">
                                         <figure class="col-xs-10 col-xs-offset-1">
                                             <center><img src="images/portraits/pic11.jpg" class="img-responsive" /></center>
@@ -253,7 +263,7 @@ I have a thing for stars and galaxies.
                                         </div>
                                     </div>
                                 </div>
-	                            <div class="col-md-4 col-sm-6">
+                                <div class="col-md-4 col-sm-6">
                                     <div class="row" id="image">
                                         <figure class="col-xs-10 col-xs-offset-1">
                                             <center><img src="images/portraits/pic10.jpg" class="img-responsive" /></center>
@@ -361,7 +371,27 @@ I have a thing for stars and galaxies.
                         </div>
                         <div class="tab-pane fade" id="FC2">
                             <div class="row">
-				    <div class="col-md-4 col-sm-6">                                    
+                                <div class="col-md-4 col-sm-6">                                    
+                                    <div class="row" id="image">
+                                        <figure class="col-xs-10 col-xs-offset-1">
+                                            <center><img src="images/paintings/pic29.jpg" class="img-responsive" /></center>
+                                        </figure>
+                                        <div id="magnify" onclick="maximize(2,29)">
+                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6">                                    
+                                    <div class="row" id="image">
+                                        <figure class="col-xs-10 col-xs-offset-1">
+                                            <center><img src="images/paintings/pic28.jpg" class="img-responsive" /></center>
+                                        </figure>
+                                        <div id="magnify" onclick="maximize(2,28)">
+                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6">                                    
                                     <div class="row" id="image">
                                         <figure class="col-xs-10 col-xs-offset-1">
                                             <center><img src="images/paintings/pic26.jpg" class="img-responsive" /></center>
@@ -381,7 +411,7 @@ I have a thing for stars and galaxies.
                                         </div>
                                     </div>
                                 </div>
-                            	<div class="col-md-4 col-sm-6">                                    
+                                <div class="col-md-4 col-sm-6">                                    
                                     <div class="row" id="image">
                                         <figure class="col-xs-10 col-xs-offset-1">
                                             <center><img src="images/paintings/pic25.jpg" class="img-responsive" /></center>
@@ -401,7 +431,7 @@ I have a thing for stars and galaxies.
                                         </div>
                                     </div>
                                 </div>
-                            	<div class="col-md-4 col-sm-6">                                    
+                                <div class="col-md-4 col-sm-6">                                    
                                     <div class="row" id="image">
                                         <figure class="col-xs-10 col-xs-offset-1">
                                             <center><img src="images/paintings/pic23.jpg" class="img-responsive" /></center>
@@ -410,8 +440,8 @@ I have a thing for stars and galaxies.
                                             <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
                                         </div>
                                     </div>
-	                            </div>
-                           		<div class="col-md-4 col-sm-6">                                    
+                                </div>
+                                <div class="col-md-4 col-sm-6">                                    
                                     <div class="row" id="image">
                                         <figure class="col-xs-10 col-xs-offset-1">
                                             <center><img src="images/paintings/pic22.jpg" class="img-responsive" /></center>
@@ -420,8 +450,8 @@ I have a thing for stars and galaxies.
                                             <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
                                         </div>
                                     </div>
-	                            </div>
-                            	<div class="col-md-4 col-sm-6">                                    
+                                </div>
+                                <div class="col-md-4 col-sm-6">                                    
                                     <div class="row" id="image">
                                         <figure class="col-xs-10 col-xs-offset-1">
                                             <center><img src="images/paintings/pic21.jpg" class="img-responsive" /></center>
@@ -430,8 +460,8 @@ I have a thing for stars and galaxies.
                                             <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
                                         </div>
                                     </div>
-	                            </div>
-                            	<div class="col-md-4 col-sm-6">                                    
+                                </div>
+                                <div class="col-md-4 col-sm-6">                                    
                                     <div class="row" id="image">
                                         <figure class="col-xs-10 col-xs-offset-1">
                                             <center><img src="images/paintings/pic20.jpg" class="img-responsive" /></center>
@@ -440,8 +470,8 @@ I have a thing for stars and galaxies.
                                             <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
                                         </div>
                                     </div>
-	                            </div>
-	                            <div class="col-md-4 col-sm-6">                                    
+                                </div>
+                                <div class="col-md-4 col-sm-6">                                    
                                     <div class="row" id="image">
                                         <figure class="col-xs-10 col-xs-offset-1">
                                             <center><img src="images/paintings/pic19.jpg" class="img-responsive" /></center>
@@ -450,8 +480,8 @@ I have a thing for stars and galaxies.
                                             <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
                                         </div>
                                     </div>
-	                            </div>
-                            	
+                                </div>
+                                
                                 
                                                               
                                 
@@ -460,7 +490,27 @@ I have a thing for stars and galaxies.
                                 <center><button class = "btn btn-primary" onclick = "showmore();" id = "showmore">Load More !</button></center>
 
                                 <div id = "extra" style = "transition:all ease-in-out 2s;">
-					<div class="col-md-4 col-sm-6">                                    
+                                <div class="col-md-4 col-sm-6">                                    
+                                    <div class="row" id="image">
+                                        <figure class="col-xs-10 col-xs-offset-1">
+                                            <center><img src="images/paintings/pic20.jpg" class="img-responsive" /></center>
+                                        </figure>
+                                        <div id="magnify" onclick="maximize(2,20)">
+                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6">                                    
+                                    <div class="row" id="image">
+                                        <figure class="col-xs-10 col-xs-offset-1">
+                                            <center><img src="images/paintings/pic19.jpg" class="img-responsive" /></center>
+                                        </figure>
+                                        <div id="magnify" onclick="maximize(2,19)">
+                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6">                                    
                                     <div class="row" id="image">
                                         <figure class="col-xs-10 col-xs-offset-1">
                                             <center><img src="images/paintings/pic18.jpg" class="img-responsive" /></center>
@@ -480,16 +530,16 @@ I have a thing for stars and galaxies.
                                         </div>
                                     </div>
                                 </div>
-                                	<div class="col-md-4 col-sm-6">                                    
-	                                    <div class="row" id="image">
-	                                        <figure class="col-xs-10 col-xs-offset-1">
-	                                            <center><img src="images/paintings/pic16.jpg" class="img-responsive" /></center>
-	                                        </figure>
-	                                        <div id="magnify" onclick="maximize(2,16)">
-	                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
-	                                        </div>
-	                                    </div>
-	                                </div>
+                                    <div class="col-md-4 col-sm-6">                                    
+                                        <div class="row" id="image">
+                                            <figure class="col-xs-10 col-xs-offset-1">
+                                                <center><img src="images/paintings/pic16.jpg" class="img-responsive" /></center>
+                                            </figure>
+                                            <div id="magnify" onclick="maximize(2,16)">
+                                                <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="col-md-4 col-sm-6">                                    
                                         <div class="row" id="image">
                                             <figure class="col-xs-10 col-xs-offset-1">
@@ -500,76 +550,76 @@ I have a thing for stars and galaxies.
                                             </div>
                                         </div>
                                     </div> 
-                                	<div class="col-md-4 col-sm-6">                                    
-	                                    <div class="row" id="image">
-	                                        <figure class="col-xs-10 col-xs-offset-1">
-	                                            <center><img src="images/paintings/pic1.jpg" class="img-responsive" /></center>
-	                                        </figure>
-	                                        <div id="magnify" onclick="maximize(2,1)">
-	                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
-	                                        </div>
-	                                    </div>
-	                                </div>
-                                	<div class="col-md-4 col-sm-6">
-	                                    <div class="row" id="image">
-	                                        <figure class="col-xs-10 col-xs-offset-1">
-	                                            <center><img src="images/paintings/pic2.jpg" class="img-responsive" /></center>
-	                                        </figure>
-	                                        <div id="magnify" onclick="maximize(2,2)">
-	                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
-	                                        </div>
-	                                    </div>
-	                                </div>
-                                	<div class="col-md-4 col-sm-6">
-	                                    <div class="row" id="image">
-	                                        <figure class="col-xs-10 col-xs-offset-1">
-	                                            <center><img src="images/paintings/pic14.jpg" class="img-responsive" /></center>
-	                                        </figure>
-	                                        <div id="magnify" onclick="maximize(2,14)">
-	                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
-	                                        </div>
-	                                    </div>
-	                                </div> 
-                                	<div class="col-md-4 col-sm-6">
-	                                    <div class="row" id="image">
-	                                        <figure class="col-xs-10 col-xs-offset-1">
-	                                            <center><img src="images/paintings/pic3.jpg" class="img-responsive" /></center>
-	                                        </figure>
-	                                        <div id="magnify" onclick="maximize(2,3)">
-	                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                                <div class="col-md-4 col-sm-6">
-	                                    <div class="row" id="image">
-	                                        <figure class="col-xs-10 col-xs-offset-1">
-	                                            <center><img src="images/paintings/pic4.jpg" class="img-responsive" /></center>
-	                                        </figure>
-	                                        <div id="magnify" onclick="maximize(2,4)">
-	                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
-	                                        </div>
-	                                    </div>
-	                                </div> 
-                                	<div class="col-md-4 col-sm-6">
-	                                    <div class="row" id="image">
-	                                        <figure class="col-xs-10 col-xs-offset-1">
-	                                            <center><img src="images/paintings/pic5.jpg" class="img-responsive" /></center>
-	                                        </figure>
-	                                        <div id="magnify" onclick="maximize(2,5)">
-	                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                                <div class="col-md-4 col-sm-6">
-	                                    <div class="row" id="image">
-	                                        <figure class="col-xs-10 col-xs-offset-1">
-	                                            <center><img src="images/paintings/pic6.jpg" class="img-responsive" /></center>
-	                                        </figure>
-	                                        <div id="magnify" onclick="maximize(2,6)">
-	                                            <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
-	                                        </div>
-	                                    </div>
-	                                </div>
+                                    <div class="col-md-4 col-sm-6">                                    
+                                        <div class="row" id="image">
+                                            <figure class="col-xs-10 col-xs-offset-1">
+                                                <center><img src="images/paintings/pic1.jpg" class="img-responsive" /></center>
+                                            </figure>
+                                            <div id="magnify" onclick="maximize(2,1)">
+                                                <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="row" id="image">
+                                            <figure class="col-xs-10 col-xs-offset-1">
+                                                <center><img src="images/paintings/pic2.jpg" class="img-responsive" /></center>
+                                            </figure>
+                                            <div id="magnify" onclick="maximize(2,2)">
+                                                <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="row" id="image">
+                                            <figure class="col-xs-10 col-xs-offset-1">
+                                                <center><img src="images/paintings/pic14.jpg" class="img-responsive" /></center>
+                                            </figure>
+                                            <div id="magnify" onclick="maximize(2,14)">
+                                                <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="row" id="image">
+                                            <figure class="col-xs-10 col-xs-offset-1">
+                                                <center><img src="images/paintings/pic3.jpg" class="img-responsive" /></center>
+                                            </figure>
+                                            <div id="magnify" onclick="maximize(2,3)">
+                                                <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="row" id="image">
+                                            <figure class="col-xs-10 col-xs-offset-1">
+                                                <center><img src="images/paintings/pic4.jpg" class="img-responsive" /></center>
+                                            </figure>
+                                            <div id="magnify" onclick="maximize(2,4)">
+                                                <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="row" id="image">
+                                            <figure class="col-xs-10 col-xs-offset-1">
+                                                <center><img src="images/paintings/pic5.jpg" class="img-responsive" /></center>
+                                            </figure>
+                                            <div id="magnify" onclick="maximize(2,5)">
+                                                <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="row" id="image">
+                                            <figure class="col-xs-10 col-xs-offset-1">
+                                                <center><img src="images/paintings/pic6.jpg" class="img-responsive" /></center>
+                                            </figure>
+                                            <div id="magnify" onclick="maximize(2,6)">
+                                                <h1 class="text-center"><span class="glyphicon glyphicon-search"></span></h1>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="col-md-4 col-sm-6">
                                         <div class="row" id="image">
                                             <figure class="col-xs-10 col-xs-offset-1">
@@ -828,21 +878,21 @@ I have a thing for stars and galaxies.
 
 
     <div id="other">
-    	<div class="container">
-    		<div class="jumbotron text-center">
-    			<h2>Other Interests</h2>
-    		</div>
-    		<div class="row">
-    			<div class="col-md-6 col-md-offset-1">
-	    			<p>As said earlier about me, I do have interest in classical music, keyboard and guitar. Here is one such moment where you see me playing my passion, singing out my happiness and fetching in peace! Thanks all for encouraging me!</p>
-	    		</div>
-    		</div>
-    		<div class="row">
-	    		<div class="col-md-6 col-md-offset-1">
-	    			<iframe width="100%" height="315" src="https://www.youtube.com/embed/DX2RakfTpRk" frameborder="0" allowfullscreen></iframe>
-	    		</div>
-    		</div>
-    	</div>
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h2>Other Interests</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-1">
+                    <p>As said earlier about me, I do have interest in classical music, keyboard and guitar. Here is one such moment where you see me playing my passion, singing out my happiness and fetching in peace! Thanks all for encouraging me!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-1">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/DX2RakfTpRk" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -913,18 +963,18 @@ So, if 'art' is what you love, take a brush, start painting, without bothering m
                 {
                     desc.innerHTML = " \"People see, they dont observe. The distinction is clear ! \" <br /><br /> <b>Benedict Cumberbatch</b> in Sherlock Holmes.";
 
-					try{
-						responsiveVoice.speak('People see, they don\'t observe. The distinction is clear. Says Benedict Cumberbatch in Sherlock Holmes');
-					}  catch(e){
+                    try{
+                        responsiveVoice.speak('People see, they don\'t observe. The distinction is clear. Says Benedict Cumberbatch in Sherlock Holmes');
+                    }  catch(e){
 
-					}
+                    }
                 }
                 if(i == 2)
                 {
                     desc.innerHTML = "<b>Walter White</b> from Breaking bad.";
 
                     try{
-                    	responsiveVoice.speak('Walter White from Breaking Bad!');
+                        responsiveVoice.speak('Walter White from Breaking Bad!');
                     }catch(e){
 
                     }
@@ -933,28 +983,28 @@ So, if 'art' is what you love, take a brush, start painting, without bothering m
                 {
                     desc.innerHTML = "\"When my dragons are grown, we will take back what was stolen from me and destroy those who wronged me! We will lay waste to armies and burn cities to the ground!\"<br />-<b>Daenerys Targaryen</b> in Game of Thrones";
 
-					try{
-						responsiveVoice.speak('When my dragons are grown, we will take back what was stolen from me and destroy those who wronged me! We will lay waste to armies and burn cities to the ground! - Daenerys Targaryen in Game of Thrones');
-					}catch(e){
+                    try{
+                        responsiveVoice.speak('When my dragons are grown, we will take back what was stolen from me and destroy those who wronged me! We will lay waste to armies and burn cities to the ground! - Daenerys Targaryen in Game of Thrones');
+                    }catch(e){
 
-					}
+                    }
                 }
                 if(i == 4)
                 {
                     desc.innerHTML = "\"I think any form of self-expression is half confidence, half sheer hard work and, maybe, a bit of talent thrown in.\" <br /> - <b>Kate Winslet</b>";
                 
-                	try{
-                		responsiveVoice.speak('I think any form of self-expression is half confidence, half sheer hard work and, maybe, a bit of talent thrown in - Kate Winslet');
-                	}catch(e){
+                    try{
+                        responsiveVoice.speak('I think any form of self-expression is half confidence, half sheer hard work and, maybe, a bit of talent thrown in - Kate Winslet');
+                    }catch(e){
 
-                	}
+                    }
                 }
                 if(i == 5)
                 {
                     desc.innerHTML = "\"When there is growth, changes are automatic. If I fear change, how can there be growth ?\"";
 
                     try{
-                    	responsiveVoice.speak('When there is growth, changes are automatic. If I fear change, how can there be growth?');
+                        responsiveVoice.speak('When there is growth, changes are automatic. If I fear change, how can there be growth?');
                     }catch(e){
 
                     }
@@ -964,7 +1014,7 @@ So, if 'art' is what you love, take a brush, start painting, without bothering m
                     desc.innerHTML = "It's the sweat that measures your hardwork, not the success!";
 
                     try{
-                    	responsiveVoice.speak('It\'s the sweat that measures your hardwork, not the success');
+                        responsiveVoice.speak('It\'s the sweat that measures your hardwork, not the success');
                     }catch(e){
 
                     }
@@ -974,7 +1024,7 @@ So, if 'art' is what you love, take a brush, start painting, without bothering m
                     desc.innerHTML = "Mohit Kushalappa. A classmate of mine!";
 
                     try{
-                    	responsiveVoice.speak('It is Mohit!');
+                        responsiveVoice.speak('It is Mohit!');
                     }catch(e){
 
                     }
@@ -984,7 +1034,7 @@ So, if 'art' is what you love, take a brush, start painting, without bothering m
                     desc.innerHTML = "Dream - A satisfied state of an unsatisfied mind!";
 
                     try{
-                    	responsiveVoice.speak('Dream - A satisfied state of an unsatisfied mind.');
+                        responsiveVoice.speak('Dream - A satisfied state of an unsatisfied mind.');
                     }catch(e){
 
                     }
@@ -993,18 +1043,18 @@ So, if 'art' is what you love, take a brush, start painting, without bothering m
                 {
                     desc.innerHTML = "Pencil sketch of the portrait photo taken by Sumukh Bharadwaj.Check out his gallery <a href = \"https://www.instagram.com/oftrailsandtales/\" target = \"_blank\">@oftrailsandtales</a> for more of his amazing photography and heartwarming travel stories.";
 
-					try{
-						responsiveVoice.speak('Pencil sketch of the portrait photo taken by Sumukh Bharadwaj.Check out his gallery of trails and tales for more of his amazing photography and heartwarming travel stories.');
-					}catch(e){
+                    try{
+                        responsiveVoice.speak('Pencil sketch of the portrait photo taken by Sumukh Bharadwaj.Check out his gallery of trails and tales for more of his amazing photography and heartwarming travel stories.');
+                    }catch(e){
 
-					}
+                    }
                 }
                 if(i == 10)
                 {
                     desc.innerHTML = "Love is an irresistible desire to be irresistibly desired!";
 
                     try{
-                    	responsiveVoice.speak('Love is an irresistable desire to be irresistably desired!');
+                        responsiveVoice.speak('Love is an irresistable desire to be irresistably desired!');
                     }catch(e){
 
                     }
@@ -1014,37 +1064,47 @@ So, if 'art' is what you love, take a brush, start painting, without bothering m
                     desc.innerHTML = "When will you start living like a mendicant - having just a carry bag as possession,going from town to town, singing songs, forgetting about burdens, letting the joys and griefs not affect your mind? That day, you will be truly happy. ";
 
                     try{
-                    	responsiveVoice.speak('When will you start living like a mendicant - having just a carry bag as possession, going from town to town, singing songs, forgetting about burdens, letting the joys and griefs not affect your mind? That day, you will be truly happy. ');
+                        responsiveVoice.speak('When will you start living like a mendicant - having just a carry bag as possession, going from town to town, singing songs, forgetting about burdens, letting the joys and griefs not affect your mind? That day, you will be truly happy. ');
                     }catch(e){
 
                     }
                 }
-		if(i == 12)
+        if(i == 12)
                 {
                     desc.innerHTML = "Drop the idea of becoming someone, because you are already a masterpiece. You cannot be improved. You have only to come to it, to know it, to realize it. -OSHO";
 
                     try{
-                    	responsiveVoice.speak('Drop the idea of becoming someone, because you are already a masterpiece. You cannot be improved. You have only to come to it, to know it, to realize it. says, OSHO');
+                        responsiveVoice.speak('Drop the idea of becoming someone, because you are already a masterpiece. You cannot be improved. You have only to come to it, to know it, to realize it. says, OSHO');
                     }catch(e){
 
                     }
                 }
-		if(i == 13)
+        if(i == 13)
                 {
                     desc.innerHTML = "Be ugly. Be imperfect. Be everything they've always told you not to be. Be unapologetically you.";
 
                     try{
-                    	responsiveVoice.speak('Be ugly. Be imperfect. Be everything they\'ve always told you not to be. Be unapologetically you.');
+                        responsiveVoice.speak('Be ugly. Be imperfect. Be everything they\'ve always told you not to be. Be unapologetically you.');
                     }catch(e){
 
                     }
                 }
-		if(i == 14)
+        if(i == 14)
                 {
                     desc.innerHTML = "Osho";
 
                     try{
-                    	responsiveVoice.speak('Osho');
+                        responsiveVoice.speak('Osho');
+                    }catch(e){
+
+                    }
+                }
+                f(i == 15)
+                {
+                    desc.innerHTML = "What we experience as our world and what we consider to be our existence are true in a limited sense and limited perspective. The world is nothing but a vibration of consciousness in space. Everything else is #maya #trap.";
+
+                    try{
+                        responsiveVoice.speak('What we experience as our world and what we consider to be our existence are true in a limited sense and limited perspective. The world is nothing but a vibration of consciousness in space. Everything else is #maya #trap.');
                     }catch(e){
 
                     }
@@ -1155,13 +1215,22 @@ So, if 'art' is what you love, take a brush, start painting, without bothering m
                 {
                     desc.innerHTML = "General relativity depicted in a black hole! A poster painting.";
                 }
-		if(i==26)
+        if(i==26)
                 {
                     desc.innerHTML = "A place deep within us";
                 }
-		if(i==27)
+        if(i==27)
                 {
                     desc.innerHTML = "In the end, we are all stardust.";
+                }
+            }
+        if(i==28)
+                {
+                    desc.innerHTML = "When you are here, and now, not jumping ahead, not running behind, miracle happens. To be in the moment is the miracle";
+                }
+        if(i==29)
+                {
+                    desc.innerHTML = "There's a pleasure in philosophy, a dear delight. The love of a modestly elusive truth seems more glorious, incomparably, than the lust for the ways of the flesh and the dross of the world. And there's always some wistful remnant in us of that early wooing of wisdom.";
                 }
             }
 
